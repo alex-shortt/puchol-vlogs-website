@@ -1,0 +1,14 @@
+.about {
+  flex: 1;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > iframe{
+    max-width: 95%;
+    max-height: 90%;
+  }
+}

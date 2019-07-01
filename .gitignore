@@ -1,0 +1,11 @@
+$ git status
+
+#Ignore node_modules
+node_modules
+
+/node_modules
+bundle.js
+npm-debug.log
+.DS_Store
+
+dist

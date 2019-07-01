@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Carlos Puchol Vlogs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-101191361-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-101191361-2")
+    </script>
+  </head>
+  <!--Made by Alex Shortt-->
+  <body>
+    <div id="home" class="home hidden">
+      <img
+        id="home-logo"
+        class="home-logo op-trans invisible"
+        src="assets/CPV.png"
+      />
+      <div class="home-icons">
+        <div class="home-icons-container">
+          <div id="home-brand" class="home-icon-wrapper op-trans invisible">
+            <img
+              class="home-icon home-icon-brand cpv-brand"
+              src="assets/brand-purple.png"
+            />
+            <h3>Brand</h3>
+          </div>
+          <div id="home-music" class="home-icon-wrapper op-trans invisible">
+            <img
+              class="home-icon home-icon-music cpv-music"
+              src="assets/music-purple.png"
+            />
+            <h3>Music Videos</h3>
+          </div>
+          <div id="home-animation" class="home-icon-wrapper op-trans invisible">
+            <img
+              class="home-icon home-icon-animation cpv-animation"
+              src="assets/animation-purple.png"
+            />
+            <h3>Personal Vlogs</h3>
+          </div>
+          <div id="home-about" class="home-icon-wrapper op-trans invisible">
+            <img
+              class="home-icon home-icon-about cpv-about"
+              src="assets/about-purple.png"
+            />
+            <h3>Student Productions</h3>
+          </div>
+          <div id="home-contact" class="home-icon-wrapper op-trans invisible">
+            <img
+              class="home-icon home-icon-contact cpv-contact"
+              src="assets/contact-purple.png"
+            />
+            <h3>Contact / Work</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cpv" class="cpv fadein hidden">
+      <div class="cpv-navbar">
+        <img class="cpv-navbar-logo cpv-logo" src="assets/CPV.png" />
+        <h3 class="cpv-navbar-title">PUCHOL VLOGS</h3>
+        <i id="cpv-navbar-menu" class="cpv-navbar-menu fas fa-bars"></i>
+      </div>
+      <div id="cpv-menu" class="cpv-menu">
+        <div class="cpv-menu-row cpv-brand">
+          <div
+            class="cpv-menu-icon"
+            style="background-image: url('assets/brand.png')"
+          ></div>
+          <h3 class="cpv-menu-text">BRAND CONTENT</h3>
+        </div>
+        <div class="cpv-menu-row cpv-music">
+          <div
+            class="cpv-menu-icon"
+            style="background-image: url('assets/music.png')"
+          ></div>
+          <h3 class="cpv-menu-text">MUSIC VIDEOS</h3>
+        </div>
+        <div class="cpv-menu-row cpv-animation">
+          <div
+            class="cpv-menu-icon"
+            style="background-image: url('assets/animation.png')"
+          ></div>
+          <h3 class="cpv-menu-text">PERSONAL VLOGS</h3>
+        </div>
+        <div class="cpv-menu-row cpv-about">
+          <div
+            class="cpv-menu-icon"
+            style="background-image: url('assets/about.png')"
+          ></div>
+          <h3 class="cpv-menu-text">STUDENT PRODUCTIONS</h3>
+        </div>
+        <div class="cpv-menu-row cpv-contact">
+          <div
+            class="cpv-menu-icon"
+            style="background-image: url('assets/contact.png')"
+          ></div>
+          <h3 class="cpv-menu-text">CONTACT / WORK</h3>
+        </div>
+        <img class="cpv-menu-logo cpv-logo" src="assets/CPV.png" />
+      </div>
+      <div class="cpv-content">
+        <div id="media" class="media fadein hidden"></div>
+        <div id="about" class="about fadein hidden">
+          <iframe
+            width="840"
+            height="472.5"
+            src="https://www.youtube.com/embed/gWbGIq7OuLw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="contact" class="contact fadein hidden">
+          <div class="contact-info">
+            <img src="assets/location.png" />
+            <h3>San Jose, California</h3>
+          </div>
+          <div class="contact-info">
+            <img src="assets/email.png" />
+            <h3>carlos.vlogs.puchol@gmail.com</h3>
+          </div>
+          <div class="contact-info">
+            <img src="assets/instagram.png" />
+            <h3>@Puchol.Vlogs</h3>
+          </div>
+        </div>
+      </div>
+      <div class="cpv-footer">
+        <img class="cpv-footer-logo cpv-logo" src="assets/CPV.png" />
+        <img
+          class="cpv-footer-icon active cpv-brand"
+          src="assets/brand-purple.png"
+        />
+        <img class="cpv-footer-icon cpv-music" src="assets/music-purple.png" />
+        <img
+          class="cpv-footer-icon cpv-animation"
+          src="assets/animation-purple.png"
+        />
+        <img class="cpv-footer-icon cpv-about" src="assets/about-purple.png" />
+        <img
+          class="cpv-footer-icon cpv-contact"
+          src="assets/contact-purple.png"
+        />
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div id="modal-container" class="modal-container">
+        <i id="modal-close" class="fas fa-times modal-close"></i>
+        <i id="modal-left" class="fas fa-angle-left modal-arrow left"></i>
+        <i id="modal-right" class="fas fa-angle-right modal-arrow right"></i>
+        <div class="modal-titles">
+          <h2></h2>
+          <h4></h4>
+        </div>
+      </div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

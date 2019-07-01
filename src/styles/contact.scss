@@ -1,0 +1,38 @@
+.contact {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 675px) {
+    flex-direction: column;
+  }
+
+  &-info {
+    height: 175px;
+    margin: 50px;
+
+    @media screen and (max-width: 835px) {
+      height: 155px;
+      margin: 30px;
+    }
+
+    @media screen and (max-width: 675px) {
+      height: 18vh;
+      margin: 5vh;
+    }
+
+    & > img {
+      height: 100%;
+
+      @media screen and (max-width: 675px) {
+        height: calc(100% - 41px);
+      }
+    }
+
+    & > h3 {
+      color: white;
+    }
+  }
+}
