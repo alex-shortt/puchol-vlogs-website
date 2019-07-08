@@ -3,7 +3,8 @@ import { loadHome, unloadHome } from "./home.js"
 import {
   placeBrandVideos,
   placeMusicVideos,
-  placeAnimationVideos
+  placeAnimationVideos,
+  placeStudentVideos
 } from "./media.js"
 
 export function getHash() {
@@ -32,7 +33,7 @@ export async function pushPage(page, overload) {
 }
 
 export async function hidePages(nextPage) {
-  const fadePages = ["home", "cpv", "media", "about", "contact"]
+  const fadePages = ["home", "cpv", "media", "student", "contact"]
 
   let stayInMedia = nextPage != "" && !$("#cpv").hasClass("hidden")
 
@@ -70,8 +71,6 @@ export async function showPage(page) {
 
     if (page == "contact") {
       $("#contact").removeClass("hidden")
-    } else if (page == "about") {
-      $("#about").removeClass("hidden")
     } else {
       $("#media").removeClass("hidden")
     }
@@ -82,6 +81,8 @@ export async function showPage(page) {
       placeMusicVideos()
     } else if (page == "animation") {
       placeAnimationVideos()
+    } else if (page == "student") {
+      placeStudentVideos()
     }
   }
 }

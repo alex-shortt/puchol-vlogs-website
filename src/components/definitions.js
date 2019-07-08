@@ -56,3 +56,21 @@ export const animation = [
     bottomText: "De Anza College"
   }
 ]
+
+export const student = [
+  {
+    video: "g15lXcyvJbM",
+    topText: "Car Thief | Short Film",
+    bottomText: "De Anza College"
+  },
+  {
+    video: "vFKdH1q7d14",
+    topText: "You are Fired! | Short Film",
+    bottomText: "De Anza College"
+  },
+  {
+    video: "3Ls_fnJll8g",
+    topText: "Latency | Short Film",
+    bottomText: "De Anza College"
+  }
+]

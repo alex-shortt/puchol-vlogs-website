@@ -1,4 +1,4 @@
-import { brand, music, animation } from "./definitions.js"
+import { brand, music, animation, student } from "./definitions.js"
 import { openVideoPlayer } from "./videoPlayer.js"
 
 function clearVideos() {
@@ -47,4 +47,12 @@ export function placeAnimationVideos() {
     insertContent(animation, i)
   }
   $("#media").data({ collection: "animation" })
+}
+
+export function placeStudentVideos() {
+  clearVideos()
+  for (let i = 0; i < student.length; i++) {
+    insertContent(student, i)
+  }
+  $("#media").data({ collection: "student" })
 }

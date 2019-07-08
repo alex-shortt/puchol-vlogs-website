@@ -12,7 +12,7 @@ import {
 $(".cpv-brand").click(() => pushPage("brand"))
 $(".cpv-music").click(() => pushPage("music"))
 $(".cpv-animation").click(() => pushPage("animation"))
-$(".cpv-about").click(() => pushPage("about"))
+$(".cpv-student").click(() => pushPage("student"))
 $(".cpv-contact").click(() => pushPage("contact"))
 $(".cpv-logo").click(() => pushPage(""))
 $("body").click(e => {

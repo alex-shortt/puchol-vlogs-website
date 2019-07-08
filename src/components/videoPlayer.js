@@ -1,4 +1,4 @@
-import { brand, music, animation } from "./definitions.js"
+import { brand, music, animation, student } from "./definitions.js"
 
 let coll
 let ind
@@ -11,6 +11,8 @@ function getCollection() {
       return music
     case "animation":
       return animation
+    case "student":
+      return student
   }
 }
 
