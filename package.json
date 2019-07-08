@@ -1,5 +1,5 @@
 {
-  "name": "overland-website",
+  "name": "puchol-vlogs-website",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,15 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alex-shortt/overland-website.git"
+    "url": "git+https://github.com/alex-shortt/puchol-vlogs-website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alex-shortt/overland-website/issues"
+    "url": "https://github.com/alex-shortt/puchol-vlogs-website/issues"
   },
-  "homepage": "https://github.com/htransteven/anti_website#readme",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
