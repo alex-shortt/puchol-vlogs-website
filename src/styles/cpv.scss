@@ -19,6 +19,7 @@ $cpvpadding: 25px;
   &-content {
     flex: 1;
     display: flex;
+    overflow-y: auto;
   }
 
   &-footer {
@@ -94,7 +95,7 @@ $cpvpadding: 25px;
       font-family: "Clan OT", sans-serif;
       margin: auto 0;
       font-weight: normal;
-      letter-spacing: 7px;
+      letter-spacing: 3px;
       font-size: 24px;
     }
 
