@@ -89,6 +89,10 @@ $animationTime: 0.35s;
         }
       }
 
+      & > .center {
+        text-align: center;
+      }
+
       & > .left {
         text-align: left;
         margin-left: 3vw;
@@ -124,7 +128,7 @@ $animationTime: 0.35s;
       height: 100%;
       background-size: cover;
       background-position: center center;
-      filter: brightness(0.6);
+      filter: brightness(0.5);
       transition: transform 0.5s linear;
 
       & > iframe {

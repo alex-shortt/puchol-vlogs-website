@@ -1,4 +1,4 @@
-import { brand, music, animation, student } from "./definitions.js"
+import { brand, music, vlogs, student } from "./definitions.js"
 
 let coll
 let ind
@@ -9,8 +9,8 @@ function getCollection() {
       return brand
     case "music":
       return music
-    case "animation":
-      return animation
+    case "vlogs":
+      return vlogs
     case "student":
       return student
   }
@@ -33,8 +33,8 @@ function updateVideo() {
                      </iframe>`
 
   $("#modal-container > iframe").remove()
-  $("#modal-container > div > h2").text(coll[ind].topText)
-  $("#modal-container > div > h4").text(coll[ind].bottomText)
+  $("#modal-container > div > h2").text(coll[ind].middleText || coll[ind].topText)
+  $("#modal-container > div > h4").text(coll[ind].bottomText || "")
   $("#modal-container").append(videoCode)
 }
 

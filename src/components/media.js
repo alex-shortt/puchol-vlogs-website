@@ -1,58 +1,62 @@
-import { brand, music, animation, student } from "./definitions.js"
-import { openVideoPlayer } from "./videoPlayer.js"
+import { brand, music, vlogs, student } from "./definitions.js";
+import { openVideoPlayer } from "./videoPlayer.js";
 
 function clearVideos() {
-  $("#media").html("")
+  $("#media").html("");
 }
 
 function insertContent(coll, ind) {
-  const video = coll[ind]
-  const dir = ind % 2 == 0 ? "left" : "right"
-  const opDir = dir == "left" ? "right" : "left"
-  const thumb = `https://img.youtube.com/vi/${video.video}/maxresdefault.jpg`
+  const video = coll[ind];
+  const dir = ind % 2 == 0 ? "left" : "right";
+  const opDir = dir == "left" ? "right" : "left";
+  const thumb = `https://img.youtube.com/vi/${video.video}/maxresdefault.jpg`;
+
+  const text = video.middleText
+    ? `<h1 class="center"><span>${video.middleText}</span></h1>`
+    : `<h1 class="${dir}"><span>${video.topText}</span></h1>
+  <h2 class="${opDir}"><span>${video.bottomText}</span></h2> `;
 
   $("#media").append(`<div id="video-${ind}" class="media-video ${dir}">
             <div class="media-video-overlay">
               <i class="fas fa-play"></i>
             </div>
             <div class="media-video-text">
-              <h1 class="${dir}"><span>${video.topText}</span></h1>
-              <h2 class="${opDir}"><span>${video.bottomText}</span></h2>
+              ${text}
             </div>
             <div class="media-video-video ${dir}" style="background-image:url('${thumb}')"></div>
-          </div>`)
+          </div>`);
 
-  $(`#video-${ind}`).click(() => openVideoPlayer(ind))
+  $(`#video-${ind}`).click(() => openVideoPlayer(ind));
 }
 
 export function placeBrandVideos() {
-  clearVideos()
+  clearVideos();
   for (let i = 0; i < brand.length; i++) {
-    insertContent(brand, i)
+    insertContent(brand, i);
   }
-  $("#media").data({ collection: "brand" })
+  $("#media").data({ collection: "brand" });
 }
 
 export function placeMusicVideos() {
-  clearVideos()
+  clearVideos();
   for (let i = 0; i < music.length; i++) {
-    insertContent(music, i)
+    insertContent(music, i);
   }
-  $("#media").data({ collection: "music" })
+  $("#media").data({ collection: "music" });
 }
 
-export function placeAnimationVideos() {
-  clearVideos()
-  for (let i = 0; i < animation.length; i++) {
-    insertContent(animation, i)
+export function placeVlogVideos() {
+  clearVideos();
+  for (let i = 0; i < vlogs.length; i++) {
+    insertContent(vlogs, i);
   }
-  $("#media").data({ collection: "animation" })
+  $("#media").data({ collection: "vlogs" });
 }
 
 export function placeStudentVideos() {
-  clearVideos()
+  clearVideos();
   for (let i = 0; i < student.length; i++) {
-    insertContent(student, i)
+    insertContent(student, i);
   }
-  $("#media").data({ collection: "student" })
+  $("#media").data({ collection: "student" });
 }

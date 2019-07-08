@@ -7,7 +7,7 @@ export async function loadHome() {
   await delay(500)
   $("#home-music").removeClass("invisible")
   await delay(500)
-  $("#home-animation").removeClass("invisible")
+  $("#home-vlogs").removeClass("invisible")
   await delay(500)
   $("#home-student").removeClass("invisible")
   await delay(500)
@@ -19,7 +19,7 @@ export function unloadHome() {
   $("#home-logo").addClass("invisible")
   $("#home-brand").addClass("invisible")
   $("#home-music").addClass("invisible")
-  $("#home-animation").addClass("invisible")
+  $("#home-vlogs").addClass("invisible")
   $("#home-student").addClass("invisible")
   $("#home-contact").addClass("invisible")
 }

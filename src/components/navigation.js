@@ -3,7 +3,7 @@ import { loadHome, unloadHome } from "./home.js"
 import {
   placeBrandVideos,
   placeMusicVideos,
-  placeAnimationVideos,
+  placeVlogVideos,
   placeStudentVideos
 } from "./media.js"
 
@@ -79,8 +79,8 @@ export async function showPage(page) {
       placeBrandVideos()
     } else if (page == "music") {
       placeMusicVideos()
-    } else if (page == "animation") {
-      placeAnimationVideos()
+    } else if (page == "vlogs") {
+      placeVlogVideos()
     } else if (page == "student") {
       placeStudentVideos()
     }

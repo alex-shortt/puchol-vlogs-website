@@ -19,7 +19,7 @@ export const brand = [
     topText: "Cullera, Spain",
     bottomText: "Drone Footage"
   }
-]
+];
 
 export const music = [
   {
@@ -37,25 +37,26 @@ export const music = [
     topText: "Time To Make A Move",
     bottomText: "V.A.L.T. Fareal"
   }
-]
+];
 
-export const animation = [
+export const vlogs = [
   {
-    video: "g15lXcyvJbM",
-    topText: "Car Thief | Short Film",
-    bottomText: "De Anza College"
+    video: "o0sA0GdVH-w",
+    middleText: "Day In the Life Of Marching Band"
   },
   {
-    video: "vFKdH1q7d14",
-    topText: "You are Fired! | Short Film",
-    bottomText: "De Anza College"
+    video: "q_s4A81PtU0",
+    middleText: "My Mission For Today!"
   },
   {
-    video: "3Ls_fnJll8g",
-    topText: "Latency | Short Film",
-    bottomText: "De Anza College"
+    video: "vhsN1zU9qb8",
+    middleText: "Day Trip To San Francisco!"
+  },
+  {
+    video: "mX0uzLx740w",
+    middleText: "Mazda 3 Sport!"
   }
-]
+];
 
 export const student = [
   {
@@ -73,4 +74,4 @@ export const student = [
     topText: "Latency | Short Film",
     bottomText: "De Anza College"
   }
-]
+];
